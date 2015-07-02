@@ -1,5 +1,52 @@
+@media screen and (min-width:0px) and (max-width:736px) {
+  .cb-slideshow {
+    display: none;
+  }
+  .pho-mob {
+    display: block; 
+  }
+  .footer {
+    padding-bottom: 20px
+  }
+  .con, .insta {
+    float: none !important;
+    text-align: center;
+    padding: 5px !important;
+  }
+  #mailchimp {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width:1600px) {
+  .pho-mob {
+    display: none;
+  }
+}
+
+/*GENERAL*/
+
+a {
+    color: #fff;
+}
+
+.footer a {
+    opacity: 0.8;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+body {
+    font-family: 'OPEN SANS', Geneva, sans-serif;
+}
+
+/*CONTENT*/
+
 .container {
-    width: 900px;
+    width: 100%;
     display: block;
     margin: 0 auto; 
     z-index: 1000;
@@ -10,14 +57,33 @@
     text-align: center;
 }
 
+.pho-mob {
+    background: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796005/canvas/4.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
 .footer {
     width: 100%;
-    float: left;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    position: fixed;
+    bottom: 0;
     z-index: 1000;
+    font-size: .85em;
 }
+
+.con,
+.insta {
+    float: left;
+    padding: 15px 10px;
+}
+
+/*SLIDESHOW*/
 
 .cb-slideshow,
 .cb-slideshow:after { 
@@ -45,7 +111,7 @@
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 36s linear infinite 0s; 
+    animation: imageAnimation 42s linear infinite 0s; 
 }
 
 .cb-slideshow li div { 
@@ -55,31 +121,36 @@
     width: 100%;
     text-align: center;
     opacity: 1;
-    animation: titleAnimation 36s linear infinite 0s; 
+    animation: titleAnimation 42s linear infinite 0s; 
 }
 
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../assets/1.jpg) 
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796005/canvas/4.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
-    background-image: url(../assets/2-2.jpg);
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796005/canvas/2-2.jpg);
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../assets/3-2.jpg);
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/3-2.jpg);
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
-    background-image: url(../assets/4.jpg);
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/6.jpg);
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
-    background-image: url(../assets/5.jpg);
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796005/canvas/1.jpg);
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-    background-image: url(../assets/6.jpg);
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/7.jpg);
     animation-delay: 30s; 
+}
+
+.cb-slideshow li:nth-child(7) span { 
+    background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/5.jpg);
+    animation-delay: 36s; 
 }
 
 
