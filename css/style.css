@@ -111,7 +111,7 @@ body {
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 42s linear infinite 0s; 
+    -webkit-animation: imageAnimation 42s linear infinite 0s; 
 }
 
 .cb-slideshow li div { 
@@ -121,7 +121,7 @@ body {
     width: 100%;
     text-align: center;
     opacity: 1;
-    animation: titleAnimation 42s linear infinite 0s; 
+    -webkit-animation: titleAnimation 42s linear infinite 0s; 
 }
 
 .cb-slideshow li:nth-child(1) span { 
@@ -129,41 +129,41 @@ body {
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796005/canvas/2-2.jpg);
-    animation-delay: 6s; 
+    -webkit-animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
     background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/3-2.jpg);
-    animation-delay: 12s; 
+    -webkit-animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
     background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/6.jpg);
-    animation-delay: 18s; 
+    -webkit-animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
     background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796005/canvas/1.jpg);
-    animation-delay: 24s; 
+    -webkit-animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
     background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/7.jpg);
-    animation-delay: 30s; 
+    -webkit-animation-delay: 30s; 
 }
 
 .cb-slideshow li:nth-child(7) span { 
     background-image: url(http://res.cloudinary.com/duceyomw7/image/upload/v1435796006/canvas/5.jpg);
-    animation-delay: 36s; 
+    -webkit-animation-delay: 36s; 
 }
 
 
 
-@keyframes imageAnimation { 
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0; -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1; -webkit-animation-timing-function: ease-out; }
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
 
-@keyframes titleAnimation { 
+@-webkit-keyframes titleAnimation { 
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
